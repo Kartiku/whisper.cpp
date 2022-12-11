@@ -7,6 +7,10 @@ Be sure to install the `x64-windows` version of sdl2 with
 
 Otherwise it will install 32-bit version be default and the whisper CMake process won't find it.
 
+# WARNING: cannot process audio fast enough, dropping audio
+
+The inference is too slow to catch up with the rate of recording.  Maybe playing with `--step` argument will help. Defaults to 3 second steps.  Or would be better to have a button that enables recording instead of always listening.
+
 # Original README below
 # whisper.cpp
 
