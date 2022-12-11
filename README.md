@@ -1,3 +1,13 @@
+# Installing SDL2 using vcpkg
+Be sure to install the `x64-windows` version of sdl2 with
+
+```
+.\vcpkg install sdl2:x64-windows
+```
+
+Otherwise it will install 32-bit version be default and the whisper CMake process won't find it.
+
+# Original README below
 # whisper.cpp
 
 [![Actions Status](https://github.com/ggerganov/whisper.cpp/workflows/CI/badge.svg)](https://github.com/ggerganov/whisper.cpp/actions)
